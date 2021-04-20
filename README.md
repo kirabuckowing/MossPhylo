@@ -14,3 +14,7 @@ Files cover the different steps of the process, including:
 
 Helper files for other sub-steps and helpful extras are also included for transparency.
 Steps of the Ya Yang pipeline were utilized for actions around and after orthologous group discovery, starting at approximately Step 6 on their research site (https://bitbucket.org/yangya/phylogenomic_dataset_construction/src/master/)
+
+
+Syntrichia was added late as a new model genome, meaning it needed to be manipulated a bit more than the more established ppatens and ceratodon in order to be used alongside them. 
+Codes relevant to such can be found in the appropriate folder.
