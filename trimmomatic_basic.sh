@@ -1,4 +1,4 @@
-#This file performs quality trimming on raw Illumina HiSeq files using Trimmomatic.
+#This program performs quality trimming on raw Illumina HiSeq files using Trimmomatic.
 
 #!/bin/bash
 
