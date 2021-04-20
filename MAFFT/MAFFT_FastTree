@@ -1,0 +1,3 @@
+#Command line code to run MAFFT, followed by FastTree in parallel on the wanted orthologs
+
+parallel --eta -j 50 "mafft --auto unaligned_orthogroups/{}_nostop.fa  | tee aligned_orthogroups/{}.aligned.fa | FastTreeDbl > orthogroup_fasttree/{}.tre" :::: ortho_20_pc.csv
