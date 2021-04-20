@@ -1,8 +1,10 @@
-#Simple file to quickly rename transdecoder output files.
+#Simple program to quickly rename transdecoder output files.
 
 #!/bin/bash
 
+#Set this to your desired file, listing the ID's you would like to iterate over within a directory.
 file="/scratch/user/allMosses/IDs.txt"
+
 while read -r line;
 do
 #Navigate to corresponding folder where trimmomatic, trinity and transdecoder outputs have been moved off the cluster.
