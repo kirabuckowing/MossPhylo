@@ -1,0 +1,10 @@
+#Various command line codes for extracting the CDS sections of the new Syntrichia genome gff file
+
+#Write the CDS lines from the original gff file to a new one.
+awk '$3 == "CDS" {print $0}' Syntrichia_caninervis.gff > Syntrichia_CDS.gff
+
+#Fix headers of sequences within the new file so bedtools can work in the next step.
+sed "s/>lcl|/>/g" Syntrichia_caninervis.faa | awk '{print $1}' > Syntrichia_fixed.fa
+
+#Use bedtools to get a fasta file containing only the CDS sequences.
+bedtools getfasta -fo Syntrichia_CDS.fa -fi Syntrichia_fixed.faa -bed Syntrichia_CDS.gff
