@@ -1,0 +1,8 @@
+#Command line code to run orthofinder alone, and with added files after an initial run.
+#Requires orthofinder to be installed with the proper executable.
+
+#To run orthofinder on a directory containing clustered files.
+orthofinder -t 45 -f Directory/
+
+#To add new files to an older orthofinder run.
+orthofinder -t 55 -b /scratch/user/allMosses/FullOrthofinder/OrthoFinder/Results_Sep11/WorkingDirectory/ -f /scratch/user/allMosses/AddedOrtho/
